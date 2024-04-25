@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cities with High Pollution Ratio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* CSS for image size */
+        .city-image {
+            width: 200px; /* Set width */
+            height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure proper spacing */
+            margin: 10px auto; /* Add margin for spacing */
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <section id="cities">
+            <div class="container">
+                <h2>Cities with High Pollution Ratio</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Pollution Level</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>New York</td>
+                            <td>85</td>
+                            <td><img src="new_york.jpg" alt="New York" class="city-image"></td>
+                        </tr>
+                        <tr>
+                            <td>Los Angeles</td>
+                            <td>72</td>
+                            <td><img src="los_angeles.jpg" alt="Los Angeles" class="city-image"></td>
+                        </tr>
+                        <tr>
+                            <td>Beijing</td>
+                            <td>90</td>
+                            <td><img src="beijing.jpg" alt="Beijing" class="city-image"></td>
+                        </tr>
+                        <tr>
+                            <td>Delhi</td>
+                            <td>95</td>
+                            <td><img src="delhi.jpg" alt="Delhi" class="city-image"></td>
+                        </tr>
+                        <tr>
+                            <td>London</td>
+                            <td>68</td>
+                            <td><img src="london.jpg" alt="London" class="city-image"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- Additional images below the table -->
+                <div class="additional-images">
+                    <img src="image1.jpg" alt="Additional Image 1" class="city-image">
+                    <img src="image2.jpg" alt="Additional Image 2" class="city-image">
+                    <img src="image3.jpg" alt="Additional Image 3" class="city-image">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

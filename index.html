@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Pollution Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Air Pollution Awareness</h1>
+            <nav>
+                <ul>
+                    <li><a href="#" onclick="loadPage('about.html')">About</a></li>
+                    <li><a href="#" onclick="loadPage('effects.html')">Effects</a></li>
+                    <li><a href="#" onclick="loadPage('control.html')">Control</a></li>
+                    <li><a href="#" onclick="loadPage('cities.html')">Cities</a></li>
+                    <li><a href="#" onclick="loadPage('quiz.html')">Quiz</a></li>
+                    <li><a href="#" onclick="loadPage('contact.html')">Contact</a></li>
+                    <li><a href="#" onclick="loadPage('resources.html')">Resources</a></li>
+                    <!-- Add more navigation links as needed -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="container">
+            <h2>Welcome to Air Pollution Awareness</h2>
+            <p>Learn about the causes, effects, and solutions to air pollution.</p>
+            <p>Take our quiz to test your knowledge.</p>
+            <p>Contact us for more information or to share your feedback.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Air Pollution Awareness</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function loadPage(page) {
+    fetch(page)
+    .then(response => response.text())
+    .then(html => {
+        document.getElementById('main-content').innerHTML = html;
+    })
+    .catch(error => console.error('Error loading page:', error));
+}
+
+    </script>
+</body>
+</html>
